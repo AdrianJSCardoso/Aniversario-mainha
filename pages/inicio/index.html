@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="/common/all.css">
+    <title>Document</title>
+</head>
+<body>
+    <header class="Cabecalho" id="Inicio">
+        <div class="cab-ini">
+            <img class="girassol-cab" src="/assets/image/girassol-simples.svg" alt="">
+            <h1>Para a flor mais linda</h1>
+        </div>
+        <nav class="Links">
+            <a href="#Carta">Carta</a>
+            <p>-</p>
+            <a href="#Album">Album</a>
+        </nav>
+    </header>
+
+    <div class="Principal">
+        <div class="prin-text">
+            <h1>Feliz Aniversario, Mainha</h1>
+            <p>A primavera que chegou em forma de gente. Onde você passa, a casa abre as janelas, o dia ganha cor e o coração se lembra de como é florescer.</p>
+        </div>
+        <div>
+            <svg xmlns="http://www.w3.org/2000/svg" class="girassol" viewBox="0 0 400 400" role="img" aria-label="Girassol">
+                <defs>
+                <g id="ring">
+                <ellipse cx="200" cy="70" rx="26" ry="60"/>
+                <ellipse cx="200" cy="70" rx="26" ry="60" transform="rotate(30 200 200)"/>
+                <ellipse cx="200" cy="70" rx="26" ry="60" transform="rotate(60 200 200)"/>
+                <ellipse cx="200" cy="70" rx="26" ry="60" transform="rotate(90 200 200)"/>
+                <ellipse cx="200" cy="70" rx="26" ry="60" transform="rotate(120 200 200)"/>
+                <ellipse cx="200" cy="70" rx="26" ry="60" transform="rotate(150 200 200)"/>
+                <ellipse cx="200" cy="70" rx="26" ry="60" transform="rotate(180 200 200)"/>
+                <ellipse cx="200" cy="70" rx="26" ry="60" transform="rotate(210 200 200)"/>
+                <ellipse cx="200" cy="70" rx="26" ry="60" transform="rotate(240 200 200)"/>
+                <ellipse cx="200" cy="70" rx="26" ry="60" transform="rotate(270 200 200)"/>
+                <ellipse cx="200" cy="70" rx="26" ry="60" transform="rotate(300 200 200)"/>
+                <ellipse cx="200" cy="70" rx="26" ry="60" transform="rotate(330 200 200)"/>
+                </g>
+                </defs>
+                <g fill="#E39A0B"><use href="#ring" transform="rotate(15 200 200)"/></g>
+                <g fill="#FBD04A"><use href="#ring"/></g>
+                <circle cx="200" cy="200" r="78" fill="#4A2C0F"/>
+                <circle cx="200" cy="200" r="64" fill="none" stroke="#7A4A1A" stroke-width="10" stroke-dasharray="2 9" stroke-linecap="round"/>
+                <circle cx="200" cy="200" r="42" fill="none" stroke="#7A4A1A" stroke-width="10" stroke-dasharray="2 8" stroke-linecap="round"/>
+                <circle cx="200" cy="200" r="20" fill="none" stroke="#7A4A1A" stroke-width="9" stroke-dasharray="2 7" stroke-linecap="round"/>
+            </svg>
+        </div>
+    </div>
+
+    <div class="Carta" id="Carta">
+         <header class="carta-Cabecalho">
+            <div class="cab-carta-text">
+                <img class="girassol-cab" src="/assets/image/girassol-simples.svg" alt="">
+                <h1>Carta para minha Flor</h1>
+            </div>
+            <nav class="carta-cab-links">
+                <a href="#Inicio">Inicio</a>
+                <p>-</p>
+                <a href="#Album">Album</a>
+            </nav>
+        </header>
+
+        <div class="carta-conteudo">
+            <div class="conteudo-textos">
+                <h1>Obrigado Por tudo </h1>
+                <p class="texto-p">Uma Carta para a senhora</p>
+                <div class="div-botao"><button type="button" class="abrir-carta" data-open-letter>Ler a carta</button></div>
+
+                <div class="modal" id="carta-modal" role="dialog" aria-modal="true" aria-labelledby="carta-titulo">
+                    <div class="modal-box">
+                        <button class="x" type="button" aria-label="Fechar carta" data-close-letter>&times;</button>
+                        <h3 id="carta-titulo">Para a minha flor</h3>
+                        <p class="carta-texto">
+                            Sempre achei a primavera a melhor estação do ano. Talvez porque ela não seja só a estação mais bonita, mas a estação em que nasceu a flor mais linda e radiante que eu tenho o prazer de ver todos os dias, desde que eu nasci.
+                            <br>
+                            a senhora é como o girassol. Mesmo quando o céu está cinza, você encontra uma direção para olhar, e quem está perto acaba se virando para a mesma luz. Foi com você que aprendi que ser forte não é nunca cair, é continuar de pé e ainda sobrar carinho para os outros.
+                            <br>
+                            Tudo de bom em mim tem a sua marca. A minha forma de enxergar as pessoas, de levantar depois de cair e de ser gentil mesmo quando é difícil vieram de você. Você me ensinou mais com o exemplo do que com qualquer palavra.
+                            <br>
+                            Sei que nem sempre foi fácil. Teve noites de cansaço e preocupações que você escondeu para a gente não sofrer. E tenho muito respeito e admiração pela mulher que a senhora é.
+                            <br>
+                            Agora é a sua vez de ser cuidada. Quero te ver rindo mais, descansando mais, viajando, fazendo aquilo que você sempre adiou. E quero estar por perto para tudo isso.
+                            <br>
+                            Que os próximos anos sejam de saúde, alegria e paz.
+                            Feliz aniversário, mãe.
+                        </p>
+
+                        <p class="sign">Te amo muito mainha.</p>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <svg class="girassol" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="400" height="400" role="img" aria-label="Girassol">
+                <defs>
+                <g id="ring">
+                <ellipse cx="200" cy="70" rx="26" ry="60"/>
+                <ellipse cx="200" cy="70" rx="26" ry="60" transform="rotate(30 200 200)"/>
+                <ellipse cx="200" cy="70" rx="26" ry="60" transform="rotate(60 200 200)"/>
+                <ellipse cx="200" cy="70" rx="26" ry="60" transform="rotate(90 200 200)"/>
+                <ellipse cx="200" cy="70" rx="26" ry="60" transform="rotate(120 200 200)"/>
+                <ellipse cx="200" cy="70" rx="26" ry="60" transform="rotate(150 200 200)"/>
+                <ellipse cx="200" cy="70" rx="26" ry="60" transform="rotate(180 200 200)"/>
+                <ellipse cx="200" cy="70" rx="26" ry="60" transform="rotate(210 200 200)"/>
+                <ellipse cx="200" cy="70" rx="26" ry="60" transform="rotate(240 200 200)"/>
+                <ellipse cx="200" cy="70" rx="26" ry="60" transform="rotate(270 200 200)"/>
+                <ellipse cx="200" cy="70" rx="26" ry="60" transform="rotate(300 200 200)"/>
+                <ellipse cx="200" cy="70" rx="26" ry="60" transform="rotate(330 200 200)"/>
+                </g>
+                </defs>
+                <g fill="#E39A0B"><use href="#ring" transform="rotate(15 200 200)"/></g>
+                <g fill="#FBD04A"><use href="#ring"/></g>
+                <circle cx="200" cy="200" r="78" fill="#4A2C0F"/>
+                <circle cx="200" cy="200" r="64" fill="none" stroke="#7A4A1A" stroke-width="10" stroke-dasharray="2 9" stroke-linecap="round"/>
+                <circle cx="200" cy="200" r="42" fill="none" stroke="#7A4A1A" stroke-width="10" stroke-dasharray="2 8" stroke-linecap="round"/>
+                <circle cx="200" cy="200" r="20" fill="none" stroke="#7A4A1A" stroke-width="9" stroke-dasharray="2 7" stroke-linecap="round"/>
+                </svg>
+            </div>
+        </div>
+
+        <div class="carta-rodape">
+            <div class="carta-linha"></div>
+            <h1>"Minha mãe, meu girassol"</h1>
+        </div>
+    </div>
+
+    <div class="Album" id="Album">
+        <header class="Album-cab">
+            <div class="album-cab-text">
+                <img class="girassol-cab" src="/assets/image/girassol-simples.svg" alt="">
+                <h1>Fotos com minha flor</h1>
+            </div>
+            <nav class="Album-links">
+                <a href="#Inicio">Inicio</a>
+                <p>-</p>
+                <a href="#Carta">Carta</a>
+            </nav>
+        </header>
+        <div class="album-conteudo">
+            <div class="album-text">
+                <h1>Nossas Lembranças</h1>
+                <div>
+                    <img class="girassol-cab" src="/assets/image/girassol-simples.svg" alt="">
+                    <img class="girassol-cab" src="/assets/image/girassol-simples.svg" alt="">
+                    <img class="girassol-cab" src="/assets/image/girassol-simples.svg" alt="">
+                </div>
+            </div>
+            <div class="Carrossel">
+                <button class="seta seta-esq" type="button" aria-label="Anterior">&#8249;</button>
+
+                <div class="carrossel-pista">
+                    <div class="card">
+                        <img src="/assets/image/foto-01.svg" alt="">
+                    </div>
+                    <div class="card"> 
+                        <img src="/assets/image/foto-02.svg" alt="">
+                    </div>
+                    <div class="card">
+                        <img src="/assets/image/foto-03.svg" alt="">
+                    </div>
+                    <div class="card">
+                        <img src="/assets/image/foto-04.svg" alt="">
+                    </div>
+                    <div class="card">
+                        <img src="/assets/image/foto-05.svg" alt="">
+                    </div>
+                    <div class="card">
+                        <img src="/assets/image/foto-06.svg" alt="">
+                    </div>
+                    <div class="card">
+                        <img src="/assets/image/foto-07.svg" alt="">
+                    </div>
+                    <div class="card">
+                        <img src="/assets/image/foto-08.svg" alt="">
+                    </div>
+                    <div class="card">
+                        <img src="/assets/image/foto-09.svg" alt="">
+                    </div>
+                    <div class="card">
+                        <img src="/assets/image/foto-10.svg" alt="">
+                    </div>
+
+                </div>
+
+                <button class="seta seta-dir" type="button" aria-label="Próximo">&#8250;</button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        var modal = document.getElementById('carta-modal');
+        function openLetter(){ modal.classList.add('open'); document.body.style.overflow = 'hidden'; }
+        function closeLetter(){ modal.classList.remove('open'); document.body.style.overflow = ''; }
+
+        document.querySelectorAll('[data-open-letter]').forEach(function(b){ b.addEventListener('click', openLetter); });
+        document.querySelectorAll('[data-close-letter]').forEach(function(b){ b.addEventListener('click', closeLetter); });
+        modal.addEventListener('click', function(e){ if (e.target === modal) closeLetter(); });
+        document.addEventListener('keydown', function(e){ if (e.key === 'Escape') closeLetter(); });
+
+
+          const pista = document.querySelector('.carrossel-pista');
+        const setaEsq = document.querySelector('.seta-esq');
+        const setaDir = document.querySelector('.seta-dir');
+
+        function atualizarSetas(){
+            const fim = pista.scrollWidth - pista.clientWidth;
+            setaEsq.hidden = pista.scrollLeft <= 5;
+            setaDir.hidden = pista.scrollLeft >= fim - 5;
+        }
+
+        function passar(direcao){
+            const card = pista.querySelector('.card');
+            const passo = card.offsetWidth + 20;   // largura do card + o gap
+            pista.scrollBy({ left: direcao * passo, behavior: 'smooth' });
+        }
+
+        setaEsq.addEventListener('click', () => passar(-1));
+        setaDir.addEventListener('click', () => passar(1));
+        pista.addEventListener('scroll', atualizarSetas);
+        window.addEventListener('resize', atualizarSetas);
+        atualizarSetas();
+        const p = document.querySelector('.carrossel-pista');
+        console.log(p.scrollWidth, p.clientWidth, document.querySelector('.seta-dir').hidden);
+    </script>
+</body>
+</html>

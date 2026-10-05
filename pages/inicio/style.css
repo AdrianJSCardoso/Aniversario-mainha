@@ -1,0 +1,937 @@
+.Cabecalho{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+
+    height: 10vh;
+    width: 100%;
+
+    padding: 10px 0px 10px 0px;
+
+    background-color: #fdeec6;
+}
+.cab-ini{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.cab-ini h1{
+    color: #633806;
+    font: 500 32px/1.6 "DM Sans", system-ui, sans-serif;
+
+    margin-left: 15px;
+}
+.Links{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.Links a{
+    margin: 10px;
+
+    color: #633806;
+     font: 20px '';
+    text-decoration: none;
+
+    cursor: pointer;
+    transition: 0.5s;
+}
+.Links a:hover{
+    margin-top: 5px;
+    text-decoration: underline;
+}
+
+.Principal{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+
+    height: 90vh;
+    width: 100%;
+
+    background-color: #f1a635;
+}
+.prin-text{
+    display: flex;
+    flex-direction: column;
+
+    width: 40%;
+}
+.prin-text h1{
+    color: #633806;
+    font: 500 60px/1.6 "DM Sans", system-ui, sans-serif;
+}
+.prin-text p{
+    color: #633806;
+    font: 400 20px/1.6 "DM Sans", system-ui, sans-serif;  
+}
+
+.Carta{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+
+    height: 100vh;
+    width: 100%;
+
+    background-color: #f8f2e0;
+
+}
+
+.carta-Cabecalho{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+
+    height: 10vh;
+    width: 100%;
+
+    border-bottom: 1px solid #f1a635;
+}
+.cab-carta-text{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.cab-carta-text h1{
+    color: #633806;
+    font: 500 32px/1.6 "DM Sans", system-ui, sans-serif;
+
+    margin-left: 15px;
+}
+
+.carta-cab-links{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.carta-cab-links a{
+    margin: 10px;
+
+    color: #633806;
+     font: 20px '';
+    text-decoration: none;
+
+    cursor: pointer;
+    transition: 0.5s;
+}
+.carta-cab-links a:hover{
+    margin-top: 5px;
+    text-decoration: underline;
+}
+
+.carta-conteudo{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+
+    width: 100%;
+}
+
+.conteudo-textos{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+
+    height: 100%;
+}
+
+.conteudo-textos h1{
+    color: #633806;
+    font: 400 40px/1.6 "DM Sans", system-ui, sans-serif;
+
+}
+
+.texto-p{
+    color: #633806;
+    font: 400 20px/1.6 "DM Sans", system-ui, sans-serif;
+}
+
+.div-botao{
+    display: flex;
+    align-items: end;
+    height: 70px;
+}
+
+.abrir-carta{
+    color: #F6B91E;
+    background-color: #633806;
+    border-radius: 50px;
+
+    font: 400 16px/1.6 "DM Sans", system-ui, sans-serif;
+
+    height: 50px;
+    width: 150px;
+
+    border: none;
+    cursor: pointer;
+}
+
+.abrir-carta:hover{
+    box-shadow: 2px 2px 2px #F6B91E;
+    margin-bottom: 6px;
+    transition: all 0.7s;
+}
+
+.carta-texto{
+    margin-top: 10px;
+    font: 400 16px/1.6 "DM Sans", system-ui, sans-serif;
+}
+
+.sign{
+    margin-top: 10px;
+    font: 500 16px/1.6 "DM Sans", system-ui, sans-serif;
+}
+
+
+.carta-rodape{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    padding: 0px 0px 20px 0px;
+}
+
+.carta-rodape h1{
+    color: #633806;
+    font: 400 30px/1.6 "DM Sans", system-ui, sans-serif;
+}
+
+.carta-linha{
+    height: 2px;
+    width: 100%;
+    background-color: #f1a635;
+
+    margin-bottom: 10px;
+}
+
+.modal{
+    position:fixed;
+    inset:0;z-index:10;
+    display:none;
+    align-items:center;
+    justify-content:center;
+    padding:20px;
+    background:rgba(30,22,8,.65)
+}
+.modal.open{
+    display:flex
+}
+.modal-box{
+    position:relative;
+    width:100%;
+    max-width:640px;
+    max-height:88vh;
+    overflow:auto;
+    background-color: #633806;
+    color: #fdeec6;
+    border-radius:18px;
+    border-top:6px solid #F6B91E;
+    padding:44px
+}
+.x{
+    position:absolute;
+    top:12px;
+    right:14px;
+    width:40px;
+    height:40px;
+    border:0;
+    border-radius:50%;
+    background:transparent;
+    font-size:28px;
+    cursor:pointer;
+
+    color: #fdeec6;
+}
+
+
+
+.Album{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow-x: hidden;
+
+
+    height: 100vh;
+    width: 100%;
+
+    background-color: #f1a635;
+
+}
+
+.Album-cab{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+
+    height: 10vh;
+    width: 100%;
+
+    background-color: #633806;
+
+    border-bottom: 1px solid #fdeec6;
+}
+.album-cab-text{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    color: #fdeec6;
+}
+.album-cab-text h1{
+    margin-left: 15px;
+}
+
+.Album-links{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.Album-links p{
+   color: #ffdbb3; 
+}
+.Album-links a{
+    margin: 10px;
+
+    color: #ffdbb3;
+     font: 20px '';
+    text-decoration: none;
+
+    cursor: pointer;
+    transition: 0.5s;
+}
+.Album-links a:hover{
+    color: #f1a635;
+    margin-top: 5px;
+    text-decoration: underline;
+}
+
+.album-conteudo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    height: 90vh;
+}
+.album-conteudo h1{
+    color: #633806;
+    font: 500 70px/1.6 "DM Sans", system-ui, sans-serif;
+}
+
+.album-text{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    margin-bottom: 30px;
+}
+
+
+.Carrossel{
+
+    position: relative;
+    width: 100%;
+    max-width: 1200px;
+    min-width: 0;
+
+}
+
+.carrossel-pista{
+    display: flex;
+    gap: 20px;
+
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    scrollbar-width: none;           /* esconde a barra no Firefox */
+}
+.carrossel-pista::-webkit-scrollbar{
+    display: none;                   /* esconde a barra no Chrome e no Brave */
+}
+
+.card{
+    flex: 0 0 280px;                 /* não encolhe: cada card tem 280px */
+    height: 360px;
+    scroll-snap-align: start;
+
+    display: flex;
+    align-items: start;
+    justify-content: center;
+
+    border-radius: 14px;
+    padding-top: 20px;
+    background-color: #fdeec6;
+    color: #633806;
+    font: 400 20px/1.6 "DM Sans", system-ui, sans-serif;
+}
+
+.card img{
+    width: 80%;
+}
+
+.seta{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 2;
+
+    width: 48px;
+    height: 48px;
+    border: none;
+    border-radius: 50%;
+    background-color: #633806;
+    color: #fdeec6;
+    font-size: 28px;
+    line-height: 1;
+    cursor: pointer;
+}
+.seta:hover{ background-color: #F6B91E; color: #633806; }
+.seta-esq {
+    left: 10px;
+}
+
+.seta-dir {
+    right: 10px;
+}
+.seta[hidden]{ display: none; }
+
+
+
+
+
+/* ================================
+   RESPONSIVIDADE
+   ================================ */
+
+@media (max-width: 768px) {
+
+    /* ================================
+       CABEÇALHO
+       ================================ */
+
+    .Cabecalho {
+        height: auto;
+        min-height: 70px;
+        padding: 10px 20px;
+        justify-content: space-between;
+        gap: 15px;
+    }
+
+    .cab-ini {
+        max-width: 50%;
+    }
+
+    .cab-ini img {
+        width: 35px;
+        height: auto;
+    }
+
+    .cab-ini h1 {
+        font-size: 20px;
+        line-height: 1.2;
+        margin-left: 8px;
+    }
+
+    .Links {
+        gap: 5px;
+    }
+
+    .Links a {
+        font-size: 15px;
+        margin: 5px;
+    }
+
+    /* ================================
+       PRINCIPAL
+       ================================ */
+
+    .Principal {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        min-height: calc(100vh - 70px);
+        height: auto;
+
+        gap: 40px;
+
+        text-align: center;
+    }
+
+    .prin-text {
+        width: 100%;
+        max-width: 500px;
+        align-items: center;
+    }
+
+    .prin-text h1 {
+        font-size: 42px;
+        line-height: 1.2;
+        margin: 0 0 15px;
+    }
+
+    .prin-text p {
+        font-size: 17px;
+        line-height: 1.5;
+        margin: 0;
+    }
+
+    .girassol {
+        width: min(70vw, 300px);
+        height: auto;
+    }
+
+
+    /* ================================
+       CARTA
+       ================================ */
+
+    .Carta {
+        min-height: 100vh;
+        height: auto;
+
+        justify-content: flex-start;
+    }
+
+    .carta-Cabecalho {
+        height: auto;
+        min-height: 70px;
+
+        padding: 10px 20px;
+
+        justify-content: space-between;
+        gap: 10px;
+    }
+
+    .cab-carta-text h1 {
+        font-size: 20px;
+        line-height: 1.2;
+        margin-left: 8px;
+    }
+
+    .carta-cab-links {
+        gap: 5px;
+    }
+
+    .carta-cab-links a {
+        font-size: 14px;
+        margin: 5px;
+    }
+
+    .carta-conteudo {
+        flex-direction: column;
+
+        width: 100%;
+        padding: 50px 25px;
+
+        gap: 40px;
+
+        text-align: center;
+    }
+
+    .conteudo-textos {
+        width: 100%;
+        height: auto;
+
+        align-items: center;
+    }
+
+    .conteudo-textos h1 {
+        font-size: 32px;
+        line-height: 1.3;
+        margin: 0 0 15px;
+    }
+
+    .texto-p {
+        font-size: 17px;
+        line-height: 1.5;
+        margin: 0;
+    }
+
+    .div-botao {
+        height: auto;
+        margin-top: 25px;
+
+        align-items: center;
+    }
+
+    .abrir-carta {
+        width: 120px;
+        height: 50px;
+    }
+
+    .abrir-carta:hover{
+    box-shadow:none;
+    margin-bottom:none;
+    transition: all 0.7s;
+    }
+
+    .carta-rodape {
+        width: calc(100% - 50px);
+
+        padding-bottom: 30px;
+
+        align-items: center;
+        text-align: center;
+    }
+
+    .carta-rodape h1 {
+        font-size: 25px;
+    }
+
+    .carta-linha {
+        width: 100%;
+    }
+
+
+    /* ================================
+       MODAL
+       ================================ */
+
+    .modal {
+        padding: 15px;
+    }
+
+    .modal-box {
+        max-width: 100%;
+        max-height: 90vh;
+
+        padding: 35px 20px 25px;
+
+        border-radius: 15px;
+    }
+
+    .x {
+        top: 8px;
+        right: 8px;
+
+        width: 35px;
+        height: 35px;
+
+        font-size: 24px;
+    }
+
+
+    /* ================================
+       ÁLBUM
+       ================================ */
+
+    .Album {
+        min-height: 100vh;
+        height: auto;
+
+        overflow-x: hidden;
+    }
+
+    .Album-cab {
+        height: auto;
+        min-height: 70px;
+
+        padding: 10px 20px;
+
+        justify-content: space-between;
+        gap: 10px;
+    }
+
+    .album-cab-text h1 {
+        font-size: 20px;
+        line-height: 1.2;
+        margin-left: 8px;
+    }
+
+    .Album-links {
+        gap: 5px;
+    }
+
+    .Album-links p {
+        display: none;
+    }
+
+    .Album-links a {
+        font-size: 14px;
+        margin: 5px;
+    }
+
+    .album-conteudo {
+        width: 100%;
+        min-height: calc(100vh - 70px);
+        height: auto;
+
+    }
+
+    .album-conteudo h1 {
+        font-size: 42px;
+        line-height: 1.2;
+
+        text-align: center;
+
+        margin-bottom: 30px;
+    }
+
+    .album-text {
+        width: 90%;
+        margin-bottom: 20px;
+    }
+
+
+    /* ================================
+       CARROSSEL
+       ================================ */
+
+    .Carrossel {
+        width: 100%;
+        max-width: 100%;
+
+        padding: 0 20px;
+        box-sizing: border-box;
+    }
+
+    .carrossel-pista {
+        gap: 15px;
+
+        padding: 5px 10px 20px;
+
+        scroll-padding-left: 10px;
+    }
+
+    .card {
+        flex: 0 0 230px;
+
+        height: 300px;
+
+        padding-top: 15px;
+
+        border-radius: 12px;
+    }
+
+    .card img {
+        width: 80%;
+        height: auto;
+    }
+
+    .seta {
+        width: 40px;
+        height: 40px;
+
+        font-size: 22px;
+    }
+
+    .seta-esq {
+        left: 5px;
+    }
+
+    .seta-dir {
+        right: 5px;
+    }
+}
+
+
+/* ================================
+   CELULARES PEQUENOS
+   ================================ */
+
+@media (max-width: 480px) {
+
+    /* CABEÇALHO */
+
+    .Cabecalho {
+        padding: 10px 15px;
+    }
+
+    .cab-ini {
+        max-width: 45%;
+    }
+
+    .cab-ini img {
+        width: 28px;
+    }
+
+    .cab-ini h1 {
+        font-size: 17px;
+    }
+
+    .Links a {
+        font-size: 14px;
+        margin: 3px;
+    }
+
+
+    /* PRINCIPAL */
+
+    .Principal {
+        padding: 0px 20px;
+        gap: 30px;
+
+        max-height: 90vh;
+    }
+
+    .prin-text h1 {
+        font-size: 34px;
+    }
+
+    .prin-text p {
+        font-size: 16px;
+    }
+
+    .girassol {
+        width: 230px;
+    }
+
+
+    /* CARTA */
+
+    .carta-Cabecalho {
+        padding: 10px 15px;
+    }
+
+    .cab-carta-text h1 {
+        font-size: 17px;
+    }
+
+    .carta-cab-links a {
+        font-size: 12px;
+        margin: 3px;
+    }
+
+    .carta-conteudo {
+        padding: 40px 20px;
+    }
+
+    .conteudo-textos h1 {
+        font-size: 28px;
+    }
+
+    .texto-p {
+        font-size: 16px;
+    }
+
+    .carta-rodape {
+        width: calc(100% - 40px);
+    }
+
+    .carta-rodape h1 {
+        font-size: 22px;
+    }
+
+
+    /* MODAL */
+
+    .modal {
+        padding: 10px;
+    }
+
+    .modal-box {
+        padding: 35px 18px 20px;
+    }
+
+
+    /* ÁLBUM */
+
+    .Album-cab {
+        padding: 10px 15px;
+    }
+
+    .album-cab-text h1 {
+        font-size: 17px;
+    }
+
+    .Album-links a {
+        font-size: 12px;
+        margin: 3px;
+    }
+
+
+    .album-conteudo h1 {
+        font-size: 34px;
+    }
+
+
+    /* CARROSSEL */
+
+    .Carrossel {
+        padding: 0 15px;
+
+        max-width: 66%;
+    }
+
+    .carrossel-pista {
+        gap: 12px;
+    }
+
+    .card {
+        flex: 0 0 210px;
+        height: 280px;
+    }
+
+    .seta {
+        width: 36px;
+        height: 36px;
+        font-size: 20px;
+    }
+
+    .seta-esq {
+        left: 2px;
+    }
+
+    .seta-dir {
+        right: 2px;
+    }
+}
+
+
+/* ================================
+   CELULARES MUITO PEQUENOS
+   ================================ */
+
+@media (max-width: 360px) {
+
+    .cab-ini h1,
+    .cab-carta-text h1,
+    .album-cab-text h1 {
+        font-size: 15px;
+    }
+
+    .Links a,
+    .carta-cab-links a,
+    .Album-links a {
+        font-size: 11px;
+    }
+
+    .prin-text h1 {
+        font-size: 30px;
+    }
+
+    .prin-text p {
+        font-size: 15px;
+    }
+
+    .girassol {
+        width: 200px;
+    }
+
+    .conteudo-textos h1 {
+        font-size: 25px;
+    }
+
+    .album-conteudo h1 {
+        font-size: 30px;
+    }
+
+    .card {
+        flex: 0 0 190px;
+        height: 260px;
+    }
+}
+
